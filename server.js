@@ -19,7 +19,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.json(database.users);
+    res.json('It is working');
 })
 
 app.post('/signin', (req, res) => { authentication.handleLogin(req, res, db, bcrypt, jwt) });
