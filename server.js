@@ -11,12 +11,12 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
 const db = database.connect();
 
 const PORT = process.env.PORT;
-
-app.use(cors());
-app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.json('It is working');
