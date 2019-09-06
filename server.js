@@ -36,6 +36,6 @@ app.use((err, req, res, next) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`CORS-enabled web server listening on port ${PORT}`)
+app.listen(5000, () => {
+    console.log(`CORS-enabled web server listening on port ${5000}`)
 });
